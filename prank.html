@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Surprise</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-color: #f0f0f0;
+        }
+        .message {
+            font-size: 36px;
+            color: green;
+            padding: 20px;
+        }
+        .warning {
+            font-size: 48px;
+            color: red;
+            padding: 20px;
+            display: none; /* Hide initially */
+        }
+    </style>
+</head>
+<body>
+    <div class="message">Happy Birthday Kashish!</div>
+    <div class="warning" id="warning">Congratulations, your phone is hacked!</div>
+
+    <script>
+        // Show the warning message after 3 seconds
+        setTimeout(function() {
+            document.getElementById("warning").style.display = "block";
+        }, 3000);
+    </script>
+</body>
+</html>
